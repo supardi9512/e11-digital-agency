@@ -38,6 +38,8 @@ sr.reveal('.about-img',{});
 sr.reveal('.about-subtitle',{delay: 400}); 
 sr.reveal('.about-text',{delay: 400}); 
 
+sr.reveal('.service-content',{interval: 200}); 
+
 // TEXT ANIMATION (SUPARDI)
 class TypeWriter {
   constructor(txtElement, words, wait = 3000) {
