@@ -264,6 +264,31 @@ img{
     border-radius: .5rem;
 }
 
+/* FOOTER (SITI SYEKHA SASMITA) */
+.footer{
+    background-color: var(--second-color);
+    color: var(--third-color);
+    text-align: center;
+    font-weight: var(--font-semi);
+    padding: 2rem 0;
+}
+.footer-logo{
+    width: 200px;
+    margin: 0 auto var(--mb-4);
+    display: block;
+}
+.footer-social{
+    margin-bottom: var(--mb-4);
+}
+.footer-icon{
+    font-size: 1.5rem;
+    color: var(--third-color);
+    margin: 0 var(--mb-2)
+}
+.footer-icon:hover{
+    color: var(--first-color);
+}
+
 /* MEDIA QUERIES */
 @media screen and (max-width: 960px){
 

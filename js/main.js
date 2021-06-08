@@ -34,6 +34,10 @@ sr.reveal('.home',{});
 sr.reveal('.home-title',{delay: 200}); 
 sr.reveal('.home-button',{delay: 400}); 
 
+sr.reveal('.about-img',{}); 
+sr.reveal('.about-subtitle',{delay: 400}); 
+sr.reveal('.about-text',{delay: 400}); 
+
 // TEXT ANIMATION (SUPARDI)
 class TypeWriter {
   constructor(txtElement, words, wait = 3000) {
