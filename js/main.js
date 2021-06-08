@@ -40,6 +40,11 @@ sr.reveal('.about-text',{delay: 400});
 
 sr.reveal('.service-content',{interval: 200}); 
 
+sr.reveal('.client-content',{interval: 200}); 
+
+sr.reveal('.contact-input',{interval: 200}); 
+sr.reveal('.contact-button',{interval: 400});
+
 // TEXT ANIMATION (SUPARDI)
 class TypeWriter {
   constructor(txtElement, words, wait = 3000) {

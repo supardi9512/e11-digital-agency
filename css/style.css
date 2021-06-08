@@ -315,6 +315,40 @@ img{
     transform: scale(1.1);
 }
 
+/* CONTACT (UCU WARDANI OKTRIANA) */
+.contact .contact-input{
+    width: 100%;
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-semi);
+    padding: 1rem;
+    border-radius: .5rem;
+    border: 2px solid var(--second-color);
+    outline: none;
+    margin-bottom: var(--mb-4);
+    color: var(--first-color);
+} 
+.contact .contact-input:focus{
+    border: 2px solid var(--first-color);
+}
+.contact .contact-button{
+    display: block;
+    background-color: var(--first-color);
+    color: var(--third-color);
+    padding: .75rem 2.5rem;
+    font-weight: var(--font-semi);
+    border-radius: .5rem;
+    border: 2px solid var(--first-color);
+    outline: none;
+    font-size: var(--normal-font-size);
+    cursor: pointer;
+    margin-left: auto;
+}
+.contact .contact-button:hover{
+    box-shadow: 0 10px 36px rgba(0,0,0,.15);
+    background-color: var(--third-color);
+    color: var(--second-color);
+}
+
 /* FOOTER (SITI SYEKHA SASMITA) */
 .footer{
     background-color: var(--second-color);
@@ -461,6 +495,14 @@ img{
     grid-template-columns: repeat(2,1fr);
     align-items: center;
     text-align: initial;
+  }
+
+  /* CONTACT (UCU WARDANI OKTRIANA) */
+  .contact .contact-form{
+    width: 600px;
+  }
+  .contact .contact-container{
+    justify-items: center;
   }
 }
 
