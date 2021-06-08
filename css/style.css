@@ -248,6 +248,22 @@ img{
   color: var(--first-color);
 }
 
+/* ABOUT (SUPARDI) */
+.about .about-container{
+    row-gap: 2rem;
+    text-align: left;
+}
+.about .about-subtitle{
+    margin-bottom: var(--mb-2);
+}
+.about .about-img{
+    justify-self: center;
+}
+.about .about-img img{
+    width: 100%;
+    border-radius: .5rem;
+}
+
 /* MEDIA QUERIES */
 @media screen and (max-width: 960px){
 
@@ -334,6 +350,13 @@ img{
   .home-img{
     width: 457px;
     bottom: 15%;
+  }
+
+  /* ABOUT (SUPARDI) */
+  .about .about-container{
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    text-align: initial;
   }
 }
 
