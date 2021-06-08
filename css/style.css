@@ -1,0 +1,352 @@
+/*===== GOOGLE FONTS (SUPARDI) =====*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+/* VARIABLES CSS (SUPARDI)*/
+:root{
+  --header-height: 3rem;
+  --font-semi: 600;
+}
+:root{
+  --first-color: #3EA1BF;
+  --second-color: #111E52;
+  --third-color: #FFFFFF;
+}
+:root{
+  --body-font: 'Poppins', sans-serif;
+  --big-font-size: 2rem;
+  --h2-font-size: 1.25rem;
+  --normal-font-size: 0.938rem;
+}
+@media screen and (min-width: 960px){
+  :root{
+    --big-font-size: 3.5rem;
+    --h2-font-size: 2rem;
+    --normal-font-size: 1rem;
+  }
+}
+:root{
+  --mb-1: 0.5rem;
+  --mb-2: 1rem;
+  --mb-3: 1.5rem;
+  --mb-4: 2rem;
+  --mb-5: 2.5rem;
+  --mb-6: 3rem;
+}
+:root{
+  --z-back: -10;
+  --z-normal: 1;
+  --z-tooltip: 10;
+  --z-fixed: 100;
+}
+
+/* BASE (SUPARDI)*/
+*,::before,::after{
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+  margin: var(--header-height) 0 0 0;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  color: var(--second-color);
+}
+h1,h2,p{
+  margin: 0;
+}
+ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+img{
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* CLASS CSS (SUPARDI)*/
+.section-title{
+  position: relative;
+  font-size: var(--h2-font-size);
+  color: var(--first-color);
+  margin-top: var(--mb-2);
+  margin-bottom: var(--mb-4);
+  text-align: center;
+}
+.section-title::after{
+  position: absolute;
+  content: "";
+  width: 64px;
+  height: 0.18rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 2rem;
+  background-color: var(--first-color);
+}
+.section{
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+}
+
+/* LAYOUT (SUPARDI)*/
+.container-text{
+  background: var(--third-color);;
+  width: 30%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.bd-grid{
+  max-width: 1024px;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-column-gap: 2rem;
+  width: calc(100% - 2rem);
+  margin-left: var(--mb-2);
+  margin-right: var(--mb-2);
+}
+.l-header{
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: var(--z-fixed);
+  background-color: var(--third-color);;
+  box-shadow: 0 1px 4px rgba(146,161,176,.15);
+}
+.l-main{
+  margin-top: 5%;
+}
+
+/* NAV (RUDY HERMAWAN)*/
+.nav{
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: var(--font-semi);
+}
+.nav-item{
+  margin-bottom: var(--mb-4);
+}
+.nav-link{
+  position: relative;
+  color: var(--third-color);
+  line-height: 40px;
+}
+.nav-link:hover{
+  position: relative;
+  color: var(--first-color);
+}
+.nav-link:hover::after{
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 0.18rem;
+  left: 0;
+  top: 2rem;
+  background-color: var(--first-color);
+}
+.nav-logo img{
+  width: 200px;
+}
+.nav-toggle{
+  color: var(--second-color);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.nav-link.active {
+  color: var(--first-color) !important;
+}
+.nav-link.active::after{
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 0.18rem;
+  left: 0;
+  top: 2rem;
+  background-color: var(--first-color);
+}
+.nav-menu.show{
+  right: 0;
+}
+
+/* HOME (RUDY HERMAWAN) */
+.home{
+  height: calc(100vh - 3rem) !important;
+  row-gap: 1rem;
+  background: url("../img/home-bg.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding: 0 !important;
+  margin: 5% 0 0 !important;
+  width: 100%;
+}
+.home-text{
+  position: relative; 
+  top: 50%;
+  transform: translateY(-50%);
+}
+.home-title{
+  font-size: var(--big-font-size);
+  margin-bottom: var(--mb-5);
+  color: var(--first-color);
+  line-height: 4.5rem;
+  width: 50%;
+  text-transform: uppercase;
+}
+.home-button{
+  display: inline-block;
+  text-decoration: none;
+  background: linear-gradient(to right, var(--second-color) 50%, var(--first-color) 50%);
+  background-size: 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: background-position .3s;
+  color: var(--second-color);
+  font-size: var(--normal-font-size);
+}
+.home-button:hover{
+  font-weight: bold;
+  background-position: -100%;
+  transition: background-position .3s;
+}
+.home-button:after{
+  content: '';
+  display: block;
+  width: 0;
+  height: 0.18rem;  
+  background-color: var(--first-color);
+  transition: width .3s;
+}
+.home-button:hover:after{
+  width: 100%;
+  transition: width .3s;
+}
+.home-social{
+  display: flex;
+  flex-direction: column;
+}
+.home-social-icon{
+  width: max-content;
+  margin-bottom: var(--mb-2);
+  font-size: 1.5rem;
+  color: var(--second-color);
+}
+.home-social-icon:hover{
+  color: var(--first-color);
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 960px){
+
+    /* NAV (RUDY HERMAWAN) */
+    .nav-logo img{
+      width: 100px !important;
+    }
+    .nav-menu{
+      position: fixed;
+      top: var(--header-height);
+      right: -100%;
+      width: 50%;
+      height: 100%;
+      padding: 2rem;
+      background-color: var(--second-color);
+      transition: .5s;
+    }
+
+    /* HOME (RUDY HERMAWAN) */
+    .home-title{
+      line-height: 2.5rem !important;
+    }
+    .container-text{
+      width: 35%;
+    }
+}
+@media screen and (min-width: 960px){
+
+  /* BASE (SUPARDI)*/
+  body{
+    margin: 0;
+  }
+
+  /* CLASS CSS (SUPARDI)*/
+  .section{
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+  }
+  .section-title{
+    margin-bottom: var(--mb-6);
+  }
+  .section-title::after{
+    width: 80px;
+    top: 3rem;
+  }
+  
+  /* NAV (RUDY HERMAWAN) */
+  .nav{
+    height: calc(var(--header-height) + 2rem);
+  }
+  .nav-list{
+    display: flex;
+    padding-top: 0;
+    float: left;
+  }
+  .nav-item{
+    margin-left: var(--mb-6);
+    margin-bottom: 0;
+  }
+  .nav-toggle{
+    display: none;
+  }
+  .nav-link{
+    color: var(--second-color);
+  }
+
+  /* HOME (RUDY HERMAWAN) */
+  .home{
+    height: 100vh;
+  }
+  .home-data{
+    align-self: flex-end;
+  }
+  .home-social{
+    padding-top: 0;
+    padding-bottom: 2.5rem;
+    flex-direction: row;
+    align-self: flex-end;
+  }
+  .home-social-icon{
+    margin-bottom: 0;
+    margin-right: var(--mb-4);
+  }
+  .home-img{
+    width: 457px;
+    bottom: 15%;
+  }
+}
+
+@media screen and (min-width: 1024px){
+
+  /* LAYOUT (SUPARDI)*/
+  .bd-grid{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* HOME (RUDY HERMAWAN) */
+  .home-img{
+    right: 10%;
+  }
+}
