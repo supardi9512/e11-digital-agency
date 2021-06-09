@@ -385,7 +385,7 @@ img{
 
     /* CLIENT (SUPARDI) */
     .client-container{
-        grid-template-columns: repeat(1, 1fr) !important;
+        grid-template-columns: repeat(2, 1fr) !important;
         column-gap: 2rem;
     }
 }
